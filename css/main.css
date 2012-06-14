@@ -1,3 +1,4 @@
+/*	General	*/
 .container {
 	max-width: 980px;
 }
@@ -20,11 +21,15 @@
 	line-height: 1;
 	text-align: center;
 }
+.row-fluid {
+	margin-bottom: 20px;
+}
+/*	End General	*/
 
+/*	Objects	*/
 .center {
 	text-align: center;
 }
-
 .margin-top20 {
 	margin-top: 20px;
 }
@@ -76,10 +81,10 @@
 .underline {
 	text-decoration: underline;
 }
-.big-font {
-	font-size: 2em;
-}
+/*	End Objects	*/
 
+
+/*	Animations	*/
 .floating-more {
 	display: inline-block;
 	-webkit-animation: swing-more 6s infinite;
@@ -104,8 +109,6 @@
 	50% { -webkit-transform: rotate(8deg); }
 	100% { -webkit-transform: rotate(-8deg); }
 }
-
-
 .rotate {
 	display: inline-block;
 	-webkit-transition: -webkit-transform 1s cubic-bezier(.3, 0, 0, 1);
@@ -173,3 +176,4 @@
 		-webkit-animation-timing-function: ease-out;
 	}
 }
+/*	End Animations	*/
