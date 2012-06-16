@@ -24,6 +24,9 @@
 .row-fluid {
 	margin-bottom: 20px;
 }
+hr {
+	margin: 30px 0;
+}
 /*	End General	*/
 
 /*	Objects	*/
@@ -80,6 +83,9 @@
 }
 .underline {
 	text-decoration: underline;
+}
+.block {
+	display: block;
 }
 /*	End Objects	*/
 
