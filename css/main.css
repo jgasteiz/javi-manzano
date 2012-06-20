@@ -10,6 +10,12 @@ a {
 a:hover {
 	color: #60330C;
 }
+::selection {
+	background: #C29A77;
+}
+::-moz-selection {
+	background: #C29A77;
+}
 .container {
 	max-width: 980px;
 }
