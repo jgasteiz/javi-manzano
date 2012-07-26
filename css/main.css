@@ -4,11 +4,12 @@ body {
 	color: #463220;
 }
 a {
-	color: #80532C;
+	color: #A0734C;
 	font-weight: bold;
 }
 a:hover {
-	color: #60330C;
+	color: #502300;
+	text-decoration: none;
 }
 ::selection {
 	background: #C29A77;
@@ -76,6 +77,9 @@ i {
 .margin-bottom20 {
 	margin-bottom: 20px;
 }
+.margin-bottom40 {
+	margin-bottom: 40px;
+}
 .margin-bottom10 {
 	margin-bottom: 10px;
 }
@@ -117,6 +121,9 @@ i {
 }
 .block {
 	display: block;
+}
+.large-font {
+	font-size: 1.6em;
 }
 /*	End Objects	*/
 
