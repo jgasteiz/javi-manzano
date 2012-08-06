@@ -1,6 +1,5 @@
 /*	General	*/
 body {
-	/*color: #444;*/
 	color: #463220;
 }
 a {
@@ -61,7 +60,7 @@ i {
 }
 /*	End General	*/
 
-/*	Objects	*/
+/*	OOCSS	*/
 .center {
 	text-align: center;
 }
@@ -125,7 +124,7 @@ i {
 .large-font {
 	font-size: 1.6em;
 }
-/*	End Objects	*/
+/*	End OOCSS	*/
 
 
 /*	Animations	*/
@@ -171,10 +170,12 @@ i {
 	font-weight: bold;
 	background-color: #C02E2E;
 	color: white;
-	-webkit-box-shadow: 1px 1px #9A0000, 2px 2px #9A0000, 3px 3px #9A0000, 4px 4px #9A0000;
-	-moz-box-shadow: 1px 1px #9A0000, 2px 2px #9A0000, 3px 3px #9A0000, 4px 4px #9A0000;
-	-webkit-transition: ll 0.12s ease-out;
+	-moz-box-shadow: 	1px 1px #9A0000, 2px 2px #9A0000, 
+						3px 3px #9A0000, 4px 4px #9A0000;
+	-webkit-box-shadow: 1px 1px #9A0000, 2px 2px #9A0000,
+						3px 3px #9A0000, 4px 4px #9A0000;
 	-moz-transition: ll 0.12s ease-out;
+	-webkit-transition: ll 0.12s ease-out;
 	margin-right: 10px;
 	padding: 2px;
 }
@@ -188,8 +189,10 @@ i {
 	padding: 2px;
 	z-index: 1;
 	font-size: 1.2em;
-	-moz-box-shadow: 1px 1px #007d9a, 2px 2px #007d9a, 3px 3px #007d9a, 4px 4px #007d9a, 5px 5px #007d9a;
-	-webkit-box-shadow: 1px 1px #007d9a, 2px 2px #007d9a, 3px 3px #007d9a, 4px 4px #007d9a, 5px 5px #007d9a;
+	-moz-box-shadow: 	1px 1px #007d9a, 2px 2px #007d9a, 3px 3px #007d9a,
+						4px 4px #007d9a, 5px 5px #007d9a;
+	-webkit-box-shadow: 1px 1px #007d9a, 2px 2px #007d9a, 3px 3px #007d9a,
+						4px 4px #007d9a, 5px 5px #007d9a;
 	-webkit-animation-name: boxPulse;
 	-webkit-animation-duration: .7s;
 	-webkit-animation-iteration-count: infinite;
