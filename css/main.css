@@ -50,6 +50,34 @@ i {
 	vertical-align: middle;
 	margin-right: 4px;
 }
+.xkcd {
+	float: left;
+	margin-top: 100px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+}
+.balloon {
+	position: absolute;
+	left: 165px;
+	top: 45px;
+
+	-moz-animation: balloon 5s;
+    -webkit-animation: balloon 5s;
+    -ms-animation: balloon 5s;
+    animation: balloon 5s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+}
 @media (max-width: 767px) {
 	.console {
 		font-size: 5em;
@@ -63,6 +91,9 @@ i {
 /*	OOCSS	*/
 .center {
 	text-align: center;
+}
+.relative {
+	position: relative;
 }
 .margin-top20 {
 	margin-top: 20px;
@@ -151,6 +182,13 @@ i {
 	0%   { -webkit-transform: rotate(-8deg); }
 	50% { -webkit-transform: rotate(8deg); }
 	100% { -webkit-transform: rotate(-8deg); }
+}
+@-webkit-keyframes balloon {
+    0% { margin-top: 0; -webkit-transform:rotate(-2deg); }
+    25% { -webkit-transform:rotate(2deg) }
+    50% { margin-top: -10px; -webkit-transform:rotate(-2deg); }
+    75% { -webkit-transform:rotate(2deg) }
+    100% { margin-top: 0; -webkit-transform:rotate(-2deg); }
 }
 .rotate {
 	display: inline-block;
