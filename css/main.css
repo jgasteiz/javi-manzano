@@ -100,9 +100,6 @@ i {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-.mill-1:hover {
-	-webkit-animation-duration:        0.5s;
-}
 .mill-2 {
 	position: absolute;
 	left: 140px;
