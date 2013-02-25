@@ -48,10 +48,10 @@ i {
 	margin-right: 4px;
 }
 .xkcd {
-	float: left;
-	margin-top: 100px;
-	margin-bottom: 40px;
-	margin-left: 40px;
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-left: 40px;
     width: 200px;
     height: 200px;
 }
@@ -213,6 +213,7 @@ i {
 	display: inline-block;
 	-webkit-animation: swing-more 6s infinite;
 	-moz-animation: swing-more 6s infinite;
+    -ms-animation: swing-more 6s infinite;
 	-o-animation: swing-more 6s infinite;
 	animation: swing-more 6s infinite;
 }
@@ -220,6 +221,7 @@ i {
 	display: inline-block;
 	-webkit-animation: swing-more-two 6s infinite;
 	-moz-animation: swing-more-two 6s infinite;
+    -ms-animation: swing-more-two 6s infinite;
 	-o-animation: swing-more-two 6s infinite;
 	animation: swing-more-two 6s infinite;
 }
@@ -228,12 +230,21 @@ i {
 	font-weight: bold;
 	background-color: #C02E2E;
 	color: white;
-	-moz-box-shadow: 	1px 1px #9A0000, 2px 2px #9A0000, 
-						3px 3px #9A0000, 4px 4px #9A0000;
 	-webkit-box-shadow: 1px 1px #9A0000, 2px 2px #9A0000,
 						3px 3px #9A0000, 4px 4px #9A0000;
-	-moz-transition: ll 0.12s ease-out;
+    -moz-box-shadow:    1px 1px #9A0000, 2px 2px #9A0000,
+                        3px 3px #9A0000, 4px 4px #9A0000;
+    -ms-box-shadow:     1px 1px #9A0000, 2px 2px #9A0000,
+                        3px 3px #9A0000, 4px 4px #9A0000;
+    -o-box-shadow:      1px 1px #9A0000, 2px 2px #9A0000,
+                        3px 3px #9A0000, 4px 4px #9A0000;
+    box-shadow:         1px 1px #9A0000, 2px 2px #9A0000, 
+                        3px 3px #9A0000, 4px 4px #9A0000;
 	-webkit-transition: ll 0.12s ease-out;
+	-moz-transition: ll 0.12s ease-out;
+    -ms-transition: ll 0.12s ease-out;
+    -o-transition: ll 0.12s ease-out;
+    transition: ll 0.12s ease-out;
 	margin-right: 10px;
 	padding: 2px;
 }
@@ -319,24 +330,6 @@ i {
 		left: -23px;
 		top: -23px;
 		-moz-animation-timing-function: ease-out;
-	}
-}
-@-o-keyframes boxPulse {
-	from {
-		padding: 2px;
-		left: -23px;
-		top: -23px;
-		-o-animation-timing-function: ease-out;
-	}
-	50% {
-		padding: 4px 5px;
-		top: -19px;
-	}
-	to {
-		padding: 2px;
-		left: -23px;
-		top: -23px;
-		-o-animation-timing-function: ease-out;
 	}
 }
 /* Swings */
