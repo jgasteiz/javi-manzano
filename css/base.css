@@ -27,6 +27,11 @@ a {
   a:hover {
     color: #502300; }
 
+h2 a {
+  color: #463220; }
+  h2 a:hover {
+    text-decoration: underline; }
+
 p {
   line-height: 1.3em; }
 

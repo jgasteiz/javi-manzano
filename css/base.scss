@@ -65,6 +65,12 @@ a {
         color: $link-color-hover;
     }
 }
+h2 a {
+    color: #463220;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 p {
     line-height: 1.3em;
 }

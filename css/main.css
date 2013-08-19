@@ -10,6 +10,12 @@ a:hover {
 	color: #502300;
 	text-decoration: none;
 }
+h2 a {
+	color: #463220;
+}
+h2 a:hover {
+	text-decoration: underline;
+}
 ::selection, ::-moz-selection {
 	background: #C29A77;
 }
