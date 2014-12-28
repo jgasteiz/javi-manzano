@@ -1,0 +1,41 @@
+.row {
+    width: 100%;
+    *zoom: 1;
+    div {
+        display: block;
+        float: left;
+        width: 100%;
+        min-height: 30px;
+        margin-left: 2.127659574468085%;
+        *margin-left: 2.074468085106383%;
+        box-sizing: border-box;
+        &:first-child {
+            margin-left: 0;
+        }
+        @media (max-width: $breakpoint-palm) {
+            float: none;
+            width: 100% !important;
+            margin: 0 !important;
+        }
+    }
+    .one-quarter {
+        width: 23.404255319148934%;
+    }
+    .one-third {
+        width: 31.914893617021278%;
+    }
+    .one-half {
+        width: 48.93617021276595%;
+    }
+    .two-thirds {
+        width: 65.95744680851064%;
+    }
+    &:before, &:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}

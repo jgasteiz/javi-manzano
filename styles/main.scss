@@ -1,0 +1,168 @@
+@import "font-awesome";
+
+@import "vars";
+@import "grid";
+@import "keyframes";
+@import "base";
+@import "layout";
+
+.title-container {
+    padding: 40px;
+
+    @media (max-width: $breakpoint-palm) {
+        padding: 10px;
+    }    
+}
+
+.subtitle {
+    font-size: 2em;
+    line-height: 1.2em;
+
+    @media (max-width: $breakpoint-desk) {
+        font-size: 1.8;
+    }
+    @media (max-width: $breakpoint-palm) {
+        font-size: 1.4em;
+    }
+}
+
+.stick-man-img {
+    margin-top: 100px;
+    margin-left: 40px;
+    width: 200px;
+    height: 200px;
+
+    @media (max-width: $breakpoint-desk) {
+        margin-left: 20px;
+    }
+    @media (max-width: $breakpoint-palm) {
+        margin-top: 0;
+    }
+}
+
+.mill-img {
+    position: absolute;
+    width: 60px;
+    top: 120px;
+    left: 179px;
+    height: 60px;
+
+    -webkit-animation-name:            rotate;
+    -webkit-animation-duration:        1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.20, .10, .80, .90);
+    -ms-animation-name:            rotate;
+    -ms-animation-duration:        2s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: cubic-bezier(.34, .08, .70, .95);
+    -moz-animation-name:            rotate;
+    -moz-animation-duration:        2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: cubic-bezier(.34, .08, .70, .95);
+    animation-name:            rotate;
+    animation-duration:        2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.34, .08, .70, .95);
+
+    @media (max-width: $breakpoint-desk) {
+        left: 159px;
+    }
+    @media (max-width: $breakpoint-palm) {
+        top: 20px;
+    }
+}
+
+.stick-man-subtitle {
+    bottom: 0;
+    color: $light-brown;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.social-link {
+    font-size: 0.8em;
+}
+
+.red {
+    color: #f00;
+}
+.green {
+    color: #0f0;
+}
+.blue {
+    color: #00f;
+}
+.bold {
+    font-weight: 700;
+}
+.underline {
+    text-decoration: underline;
+}
+.floating-more {
+    display: inline-block;
+    -webkit-animation: swing-more 6s infinite;
+    -moz-animation: swing-more 6s infinite;
+    -ms-animation: swing-more 6s infinite;
+    -o-animation: swing-more 6s infinite;
+    animation: swing-more 6s infinite;
+}
+.floating-more-two {
+    display: inline-block;
+    -webkit-animation: swing-more-two 6s infinite;
+    -moz-animation: swing-more-two 6s infinite;
+    -ms-animation: swing-more-two 6s infinite;
+    -o-animation: swing-more-two 6s infinite;
+    animation: swing-more-two 6s infinite;
+}
+.pulse {
+    display: inline-block;
+    font-weight: bold;
+    background-color: #C02E2E;
+    color: white;
+    -webkit-box-shadow: 1px 1px #9A0000, 2px 2px #9A0000,
+                        3px 3px #9A0000, 4px 4px #9A0000;
+    -moz-box-shadow:    1px 1px #9A0000, 2px 2px #9A0000,
+                        3px 3px #9A0000, 4px 4px #9A0000;
+    box-shadow:         1px 1px #9A0000, 2px 2px #9A0000, 
+                        3px 3px #9A0000, 4px 4px #9A0000;
+    -webkit-transition: ll 0.12s ease-out;
+    -moz-transition: ll 0.12s ease-out;
+    -ms-transition: ll 0.12s ease-out;
+    -o-transition: ll 0.12s ease-out;
+    transition: ll 0.12s ease-out;
+    margin-right: 10px;
+    padding: 2px;
+    &:hover {
+        background-color: #2daebf;
+        text-align: center;
+        left: -23px;
+        top: -23px;
+        padding: 2px;
+        z-index: 1;
+        font-size: 1.2em;
+        -moz-box-shadow:    1px 1px #007d9a, 2px 2px #007d9a, 3px 3px #007d9a,
+                            4px 4px #007d9a, 5px 5px #007d9a;
+        -webkit-box-shadow: 1px 1px #007d9a, 2px 2px #007d9a, 3px 3px #007d9a,
+                            4px 4px #007d9a, 5px 5px #007d9a;
+        box-shadow: 1px 1px #007d9a, 2px 2px #007d9a, 3px 3px #007d9a,
+                            4px 4px #007d9a, 5px 5px #007d9a;
+        animation-name: boxPulse;
+        animation-duration: .7s;
+        animation-iteration-count: infinite;
+        animation-delay: .12s;
+        -webkit-animation-name: boxPulse;
+        -webkit-animation-duration: .7s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .12s;
+        -moz-animation-name: boxPulse;
+        -moz-animation-duration: .7s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-delay: .12s;
+        -o-animation-name: boxPulse;
+        -o-animation-duration: .7s;
+        -o-animation-iteration-count: infinite;
+        -o-animation-delay: .12s;
+    }
+}
